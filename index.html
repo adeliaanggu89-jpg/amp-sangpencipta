@@ -1,1 +1,162 @@
-CAOCIBAI
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konsol Emas Mewah</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top, rgba(255, 215, 0, 0.22), transparent 35%),
+        linear-gradient(135deg, #050505, #111111 45%, #000000);
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .gold-console {
+      position: relative;
+      width: min(920px, 100%);
+      min-height: 360px;
+      padding: 46px 32px;
+      border-radius: 34px;
+      overflow: hidden;
+      text-align: center;
+      background:
+        linear-gradient(145deg, rgba(255, 236, 150, 0.18), rgba(121, 77, 0, 0.18)),
+        linear-gradient(135deg, #1a1200, #050505 55%, #2a1a00);
+      border: 2px solid rgba(255, 215, 0, 0.7);
+      box-shadow:
+        0 0 25px rgba(255, 215, 0, 0.35),
+        0 0 80px rgba(255, 179, 0, 0.18),
+        inset 0 0 30px rgba(255, 215, 0, 0.12);
+    }
+
+    .gold-console::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.28) 18%, transparent 34%),
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.28), transparent 18%),
+        radial-gradient(circle at 80% 80%, rgba(255, 199, 44, 0.18), transparent 24%);
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    .gold-console::after {
+      content: "";
+      position: absolute;
+      inset: 14px;
+      border-radius: 26px;
+      border: 1px solid rgba(255, 232, 153, 0.45);
+      pointer-events: none;
+    }
+
+    .badge {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 22px;
+      padding: 9px 22px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #2b1700;
+      background: linear-gradient(90deg, #fff4b8, #ffd700, #b8860b);
+      box-shadow: 0 0 18px rgba(255, 215, 0, 0.55);
+    }
+
+    h1 {
+      position: relative;
+      font-family: 'Cinzel', serif;
+      font-size: clamp(34px, 7vw, 78px);
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ffd700;
+      text-shadow:
+        0 2px 0 #7a4b00,
+        0 0 12px rgba(255, 215, 0, 0.8),
+        0 0 28px rgba(255, 170, 0, 0.55),
+        0 0 55px rgba(255, 215, 0, 0.28);
+    }
+
+    .subtitle {
+      position: relative;
+      max-width: 680px;
+      margin: 22px auto 0;
+      font-size: clamp(14px, 2.4vw, 18px);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #fff4c2;
+      opacity: 0.95;
+    }
+
+    .shine-line {
+      position: relative;
+      width: 180px;
+      height: 4px;
+      margin: 28px auto 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, transparent, #ffd700, #fff5b7, #ffd700, transparent);
+      box-shadow: 0 0 18px rgba(255, 215, 0, 0.7);
+    }
+
+    @media (max-width: 480px) {
+      .gold-console {
+        min-height: 320px;
+        padding: 38px 20px;
+        border-radius: 26px;
+      }
+
+      .gold-console::after {
+        inset: 10px;
+        border-radius: 20px;
+      }
+
+      .badge {
+        font-size: 11px;
+        padding: 8px 16px;
+      }
+
+      h1 {
+        letter-spacing: 1px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gold-console">
+    <div class="badge">Konsol Emas Mewah</div>
+
+    <h1>
+      Saya Pemula,<br>
+      Ajarin Dong Sepuh
+    </h1>
+
+    <p class="subtitle">
+      Tampilan elegan, glowing, dan cocok buat banner pembuka atau landing page.
+    </p>
+
+    <div class="shine-line"></div>
+  </div>
+
+</body>
+</html>
